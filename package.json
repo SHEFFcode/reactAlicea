@@ -1,0 +1,24 @@
+{
+  "name": "react-alicea",
+  "version": "1.0.0",
+  "description": "Alicea React Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel js -d lib --presets react"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHEFFcode/reactAlicea.git"
+  },
+  "author": "Jeremy Shefer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SHEFFcode/reactAlicea/issues"
+  },
+  "homepage": "https://github.com/SHEFFcode/reactAlicea#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-react": "^6.11.1"
+  }
+}
