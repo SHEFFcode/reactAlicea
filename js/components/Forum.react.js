@@ -17,10 +17,23 @@ var Forum = React.createClass({
       }
     });
   },
+  _onAddAnswer: function (answerText) {
+    ForumDispatcher.dispatch({
+      actionType: 'FORUM_ANSWER_ADDED',
+      data: answerText
+    });
+  },
   render: function () {
     return (
       <div>
-        <ForumHeader allAnswers={ this.state.allAnswers } />
+        <ForumHeader />
+        <div className="container">
+          <hr/>
+          <ForumAnswers allAnswers={ this.state.allAnswers } />
+          <hr/>
+          <h4>Add an answers</h4>
+          <ForumAddAnswerBox onAddAnswer={ this._onAddAnswer } />
+        </div>
       </div>
     );
   }

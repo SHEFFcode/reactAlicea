@@ -13,3 +13,8 @@ myemitter.on('STARTED_THE_APP', function () {
 });
 
 myemitter.emit('STARTED_THE_APP');
+
+ForumDispatcher.register(function (action) {
+  console.log('received an action');
+  console.log(action);
+});
