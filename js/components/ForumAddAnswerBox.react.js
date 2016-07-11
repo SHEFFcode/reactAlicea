@@ -1,16 +1,11 @@
 var ForumAddAnswerBox = React.createClass({
-  getInitialState: function () {
-    return {
-      value: ''
-    }
-  },
   _onChange: function (event) {
     this.setState({
       value: event.target.value
     })
   },
   _addAnswer: function () {
-    this.props.onAddAnswer(this.state.value)
+    this.props.onAddAnswer(this.state.value);
   },
   render: function () {
     return (
