@@ -1,9 +1,6 @@
 var ForumAnswers = React.createClass({
   _onMarkCorrect: function (id) {
-    ForumDispatcher.dispatch({
-      actionType: 'FORUM_ANSWER_MARKED_CORRECT',
-      id: id
-    });
+    ForumActions.markAnswerCorrect(id);
   },
   render: function () {
     var allAnswers = this.props.allAnswers;
